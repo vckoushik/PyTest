@@ -1,0 +1,9 @@
+pytest
+UNIT-TEST : pytest -s -k test_cart.py 
+INTEGRATION-TEST : pytest -s -k test_api_integration.py 
+FUNCTIONAL-TEST: pytest -s -k test_functional.py  
+BENCHMARKS-TEST: pytest -s -k test_benchmark.py 
+OPERATIONAL-ACCEPTANCE TEST: pytest -s -k test_acceptance.py 
+
+COVERAGE-TEST: pytest --cov
+HTML-REPORT : pytest --html=report.html
